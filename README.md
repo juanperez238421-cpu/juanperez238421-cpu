@@ -25,7 +25,7 @@ Soy un profesional apasionado por transformar fenómenos físicos complejos y da
 *   Identificación de un **abandono del 85.7%** en el funnel de conversión.
 *   Diseño de modelo de retención detectando fugas críticas en la primera semana.
 
-### 2. [Optimización de Turbinas con CFD y Data Analytics](AQUÍ_PONES_EL_LINK_AL_REPO_DEL_PROYECTO_2)
+### 2. [Optimización de Turbinas con CFD y Data Analytics] - https://github.com/juanperez238421-cpu/Turbine-Optimization-CFD.git
 **Tecnologías:** Python, MATLAB, Extrapolación de Richardson.
 *   Procesamiento de datos masivos de simulaciones numéricas para energías renovables.
 *   Logro de **correlación del 95.4%** entre simulación y datos empíricos.
