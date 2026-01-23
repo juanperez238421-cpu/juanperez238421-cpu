@@ -31,6 +31,11 @@ Soy un profesional apasionado por transformar fenómenos físicos complejos y da
 *   Logro de **correlación del 95.4%** entre simulación y datos empíricos.
 *   Optimización del **50.6% en eficiencia** mediante análisis de sensibilidad.
 
+### 3. [Movilidad Urbana vs. Economía LATAM](LINK_AL_REPO_NUEVO_MOVILIDAD)
+**Tecnologías:** Python (Pandas), Data Cleaning, Visualización.
+*   **Data Wrangling:** Fusión y estandarización de datasets dispares (TomTom + OECD).
+*   Análisis de correlación entre congestión vehicular y PIB per cápita para el *Latin American Development Bank*.
+
 ---
 
 ## 📫 Contáctame
