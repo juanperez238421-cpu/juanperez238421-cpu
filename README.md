@@ -19,7 +19,7 @@ Soy un profesional apasionado por transformar fenómenos físicos complejos y da
 
 ## 📂 Mis Proyectos Destacados
 
-### 1. [Análisis de Journey y Retención E-commerce](AQUÍ_PONES_EL_LINK_AL_REPO_DEL_PROYECTO_1)
+### 1. [Análisis de Journey y Retención E-commerce] https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL.git
 **Tecnologías:** SQL (CTEs, Joins), Análisis de Cohortes.
 *   Construcción de un ecosistema analítico para evaluar el comportamiento del usuario.
 *   Identificación de un **abandono del 85.7%** en el funnel de conversión.
