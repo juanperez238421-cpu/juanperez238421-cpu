@@ -34,6 +34,11 @@ Soy un profesional apasionado por transformar fenómenos físicos complejos y da
 *   **Data Wrangling:** Fusión y estandarización de datasets dispares (TomTom + OECD).
 *   Análisis de correlación entre congestión vehicular y PIB per cápita.
 
+
+### 4. [Análisis de Comportamiento de Clientes - ConnectaTel](https://github.com/juanperez238421-cpu/telecom-analysis)
+**Tecnologías:** Python (Pandas, Seaborn), EDA, Segmentación de Clientes.
+* **Segmentación Avanzada:** Identificación del grupo **Adulto (50.4%)** como el motor de estabilidad del negocio.
+* **Calidad de Datos:** Saneamiento de un **11.7% de datos geográficos faltantes** para mejorar la precisión del marketing regional.
 ---
 
 ## 📫 Contáctame
