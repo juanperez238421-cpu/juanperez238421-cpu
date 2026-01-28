@@ -17,7 +17,7 @@ I am a professional passionate about transforming complex physical phenomena and
 
 ## 🛠 Technical Skills
 
-* **Languages:** Python (Pandas, NumPy), SQL, MATLAB, C++.
+* **Languages:** Excel, Python (Pandas, NumPy), SQL, MATLAB, C++.
 * **Analysis & Viz:** Tableau, Power BI, Advanced Excel.
 * **Engineering:** CFD Simulation, Finite Element Analysis (FEA).
 
@@ -45,6 +45,11 @@ I am a professional passionate about transforming complex physical phenomena and
 * **Advanced Segmentation:** Identified the **Adult group (50.4%)** as the primary driver of business stability.
 * **Data Quality:** Cleansed **11.7% of missing geographic data** to improve the accuracy of regional marketing efforts.
 
+### 5. [Walmart Sales Executive Analysis](https://github.com/juanperez238421-cpu/walmart-sales-analysis-report)
+**Technologies:** Advanced Excel, Power Query, Data Modeling.
+* **Business Intelligence:** Transformed raw transactional data into an executive dashboard to track efficiency KPIs.
+* **Efficiency Audit:** Identified "Pantry & Basics" as the top-performing department with $\$652.81$ per $m^{2}$.
+* **Data Integrity:** Detected a $4.79\%$ gap in sales classification, providing a roadmap for improved data sourcing.
 ---
 
 ## 📫 Contact Me
