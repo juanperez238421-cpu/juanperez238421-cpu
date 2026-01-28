@@ -1,47 +1,49 @@
-# ¡Hola! Soy Juan Diego Pérez 👋
-### Ingeniero Mecatrónico | Analista de Datos | Especialista en Automatización
+# Hi! I'm Juan Diego Pérez 👋
+### Mechatronic Engineer | Data Analyst | Automation Specialist
 
-Soy un profesional apasionado por transformar fenómenos físicos complejos y datos masivos en decisiones estratégicas. Mi enfoque combina la ingeniería (CFD, modelado) con la ciencia de datos moderna.
+I am a professional passionate about transforming complex physical phenomena and massive data into strategic decisions. My approach combines core engineering (CFD, modeling) with modern data science. 
 
-🔭 **Actualmente trabajando en:** Proyectos de optimización energética y análisis de retención de usuarios.
-🌱 **Aprendiendo:** Deep Learning aplicado a mantenimiento predictivo.
-🎓 **Formación:** Candidato a Magíster en Automatización y Control Industrial.
+**Note:** I am a **native Spanish speaker** with a global mindset for technical collaboration.
 
----
-
-## 🛠 Habilidades Técnicas
-
-*   **Lenguajes:** Python (Pandas, NumPy), SQL, MATLAB, C++.
-*   **Análisis & Viz:** Tableau, Power BI, Excel Avanzado.
-*   **Ingeniería:** Simulación CFD, Análisis de Elementos Finitos.
+🔭 **Currently working on:** Energy optimization projects and user retention analysis.
+🌱 **Learning:** Deep Learning applied to predictive maintenance.
+🎓 **Education:** Master's Candidate in Industrial Automation and Control.
 
 ---
 
-## 📂 Mis Proyectos Destacados
+## 🛠 Technical Skills
 
-### 1. [Análisis de Journey y Retención E-commerce](https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL)
-**Tecnologías:** SQL (CTEs, Joins), Análisis de Cohortes.
-*   Construcción de un ecosistema analítico para evaluar el comportamiento del usuario.
-*   Identificación de un **abandono del 85.7%** en el funnel de conversión.
+* **Languages:** Python (Pandas, NumPy), SQL, MATLAB, C++.
+* **Analysis & Viz:** Tableau, Power BI, Advanced Excel.
+* **Engineering:** CFD Simulation, Finite Element Analysis (FEA).
 
-### 2. [Optimización de Turbinas con CFD y Data Analytics](https://github.com/juanperez238421-cpu/Turbine-Optimization-CFD)
-**Tecnologías:** Python, MATLAB, Simulación Numérica.
-*   Validación de modelos físicos usando datos experimentales reales.
-*   Optimización del **50.6% en eficiencia** mediante análisis de sensibilidad.
-
-### 3. [Movilidad Urbana vs. Economía LATAM](https://github.com/juanperez238421-cpu/Urban-Mobility-Economy-LATAM)
-**Tecnologías:** Python (Pandas), Data Cleaning, Visualización.
-*   **Data Wrangling:** Fusión y estandarización de datasets dispares (TomTom + OECD).
-*   Análisis de correlación entre congestión vehicular y PIB per cápita.
-
-
-### 4. [Análisis de Comportamiento de Clientes - ConnectaTel](https://github.com/juanperez238421-cpu/telecom-analysis)
-**Tecnologías:** Python (Pandas, Seaborn), EDA, Segmentación de Clientes.
-* **Segmentación Avanzada:** Identificación del grupo **Adulto (50.4%)** como el motor de estabilidad del negocio.
-* **Calidad de Datos:** Saneamiento de un **11.7% de datos geográficos faltantes** para mejorar la precisión del marketing regional.
 ---
 
-## 📫 Contáctame
+## 📂 Featured Projects
 
-*   [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268)
-*   [Email](mailto:juanperez238421@correo.itm.edu.co)
+### 1. [E-commerce Journey and Retention Analysis](https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL)
+**Technologies:** SQL (CTEs, Joins), Cohort Analysis.
+* Built an analytical ecosystem to evaluate user behavior.
+* Identified an **85.7% drop-off rate** within the conversion funnel.
+
+### 2. [Turbine Optimization with CFD and Data Analytics](https://github.com/juanperez238421-cpu/Turbine-Optimization-CFD)
+**Technologies:** Python, MATLAB, Numerical Simulation.
+* Validation of physical models using real experimental data.
+* Achieved a **50.6% efficiency optimization** through sensitivity analysis.
+
+### 3. [Urban Mobility vs. LATAM Economy](https://github.com/juanperez238421-cpu/Urban-Mobility-Economy-LATAM)
+**Technologies:** Python (Pandas), Data Cleaning, Visualization.
+* **Data Wrangling:** Merged and standardized disparate datasets (TomTom + OECD).
+* Correlational analysis between traffic congestion and GDP per capita.
+
+### 4. [Customer Behavior Analysis - ConnectaTel](https://github.com/juanperez238421-cpu/telecom-analysis)
+**Technologies:** Python (Pandas, Seaborn), EDA, Customer Segmentation.
+* **Advanced Segmentation:** Identified the **Adult group (50.4%)** as the primary driver of business stability.
+* **Data Quality:** Cleansed **11.7% of missing geographic data** to improve the accuracy of regional marketing efforts.
+
+---
+
+## 📫 Contact Me
+
+* [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268)
+* [Email](mailto:juanperez238421@correo.itm.edu.co)
