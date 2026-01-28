@@ -6,7 +6,11 @@ I am a professional passionate about transforming complex physical phenomena and
 **Note:** I am a **native Spanish speaker** with a global mindset for technical collaboration.
 
 🔭 **Currently working on:** Energy optimization projects and user retention analysis.
-🌱 **Learning:** Deep Learning applied to predictive maintenance.
+🌱 **Learning:**  
+- Data Analytics focused on business intelligence and decision-making.  
+- Engineering applications of automation and industrial control for process optimization.  
+- Big Data technologies and scalable data pipelines for industry 4.0 and real-time analytics.
+
 🎓 **Education:** Master's Candidate in Industrial Automation and Control.
 
 ---
