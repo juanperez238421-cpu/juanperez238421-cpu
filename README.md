@@ -52,6 +52,12 @@ I am a professional passionate about transforming complex physical phenomena and
 * **Data Integrity:** Detected a $4.79\%$ gap in sales classification, providing a roadmap for improved data sourcing.
 ---
 
+### 🌟 [Manim Scientific Visualizer](https://github.com/juanperez238421-cpu/Manim-Scientific-Visualizer)
+**Technologies:** Python, NumPy, LaTeX, Manim Engine.
+* Developed a **comprehensive visualization framework** for Fluid Dynamics, Structural Statics, and Software Theory.
+* **Research Impact:** Integrated real **PIV experimental data** to validate Gravitational Vortex Turbine (GWVT) models.
+* **Software Architecture:** Built a dynamic **UML Engine** and a **Code Cursor** system for algorithmic tracing.
+
 ## 📫 Contact Me
 
 * [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268)
