@@ -59,7 +59,9 @@ I am a professional passionate about transforming complex physical phenomena and
 * **Research Impact:** Integrated real **PIV experimental data** to validate Gravitational Vortex Turbine (GWVT) models.
 * **Software Architecture:** Built a dynamic **UML Engine** and a **Code Cursor** system for algorithmic tracing.
 
+
+
 ## 📫 Contact Me
 
 * [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268)
-* [Email](mailto:juanperez238421@correo.itm.edu.co)
+* [Email](mailto:juanperez238421@correo.itm.edu.co) 
