@@ -1,6 +1,6 @@
 # Punto 8 — Taller 1 Diseño Mecánico 2026-2
 
-Solución desarrollada paso a paso a partir del diagrama del punto 8 del taller.
+Solución desarrollada, revisada y verificada paso a paso a partir del diagrama del punto 8 del taller.
 
 ## Interpretación geométrica
 
@@ -20,24 +20,43 @@ Solución desarrollada paso a paso a partir del diagrama del punto 8 del taller.
 - Excentricidad efectiva: `e = 1.25 - 1.00 = 0.25 in`
 - Momento flector: `M = 750(0.25) = 187.5 lb·in`
 
-## Resultados
+## Propiedades de sección
+
+- `A = (0.75)(0.50) = 0.375 in²`
+- `c = 0.75/2 = 0.375 in`
+- `I = (1/12)(0.50)(0.75)^3 = 0.0175781 in^4`
+- `σ_N = N/A = +1.732 ksi`
+- `|σ_b| = Mc/I = 4.000 ksi`
+
+## Resultados verificados
 
 | Magnitud | Punto A | Punto B |
 |---|---:|---:|
-| Esfuerzo normal | +5.732 ksi | -2.268 ksi |
+| Esfuerzo normal | **-2.268 ksi** | **+5.732 ksi** |
+| Estado | Compresión | Tracción |
 | Esfuerzo cortante transversal | 0 | 0 |
-| Esfuerzos principales | (5.732, 0, 0) ksi | (0, 0, -2.268) ksi |
-| Cortante máximo | 2.866 ksi | 1.134 ksi |
-| von Mises | 5.732 ksi | 2.268 ksi |
-| Factor de seguridad | 6.98 | 17.64 |
+| Principales, esfuerzo plano | (0, -2.268) ksi | (5.732, 0) ksi |
+| Cortante máximo absoluto | 1.134 ksi | 2.866 ksi |
+| von Mises | 2.268 ksi | 5.732 ksi |
+| Factor de seguridad | 17.64 | **6.98** |
 
-La condición crítica corresponde al **punto A**, con `n ≈ 6.98`.
+La condición crítica corresponde al **punto B**, con `n_min ≈ 6.98`.
+
+## QA realizado
+
+- Revisión completa del equilibrio y del brazo de momento.
+- Verificación del eje de flexión correcto y del momento de inercia `I = (1/12)(0.50)(0.75)^3`.
+- Corrección de la asignación de signos de flexión en A y B.
+- Verificación de que `τ_A = τ_B = 0` por encontrarse en fibras extremas.
+- Revisión de esfuerzos principales, círculos de Mohr, von Mises y factores de seguridad.
+- Compilación LaTeX sin warnings, overfull boxes ni underfull boxes.
+- Inspección visual de las seis páginas renderizadas.
 
 ## Archivo fuente
 
 - `Punto_8_Solucion_Diseno_Mecanico.tex`
 
-El documento usa LaTeX + TikZ para reconstruir de forma profesional el diagrama, el cuerpo libre, la sección transversal, la distribución de esfuerzo, los elementos de esfuerzo y los círculos de Mohr.
+El documento usa LaTeX + TikZ para reconstruir de forma profesional la geometría, el cuerpo libre, la sección transversal, la distribución de esfuerzo, los elementos de esfuerzo y los círculos de Mohr.
 
 Compilación recomendada:
 
