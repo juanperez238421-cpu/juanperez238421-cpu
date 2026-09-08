@@ -1,0 +1,378 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1.65cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot,es-noquoting]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,angles,quotes,positioning,babel}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{siunitx}
+
+\definecolor{navy}{RGB}{25,52,91}
+\definecolor{bluegray}{RGB}{74,96,120}
+\definecolor{soft}{RGB}{245,247,250}
+\definecolor{linegray}{RGB}{120,130,140}
+\definecolor{accent}{RGB}{147,38,38}
+\definecolor{green}{RGB}{39,108,75}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Taller 1 - Dise\~no Mec\'anico 2026-2}
+\rhead{Soluci\'on revisada - Punto 8}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=2pt}
+\sisetup{detect-all}
+
+\newtcolorbox{resultbox}{colback=soft,colframe=navy,boxrule=0.7pt,arc=2mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm}
+\newtcolorbox{checkbox}{colback=white,colframe=green,boxrule=0.6pt,arc=1.5mm,left=2mm,right=2mm,top=1mm,bottom=1mm}
+\newtcolorbox{notebox}{colback=white,colframe=bluegray,boxrule=0.5pt,arc=1.5mm,left=2mm,right=2mm,top=1mm,bottom=1mm}
+\newcommand{\ksi}{\,\mathrm{ksi}}
+\newcommand{\lbin}{\,\mathrm{lb\cdot in}}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Soluci\'on desarrollada y verificada - Punto 8}\\[3pt]
+{\large Taller 1 - Dise\~no Mec\'anico 2026-2}\\[6pt]
+\textit{Est\'atica, esfuerzos combinados, esfuerzos principales, cortante m\'aximo y von Mises}
+\end{center}
+
+\begin{resultbox}
+\textbf{Enunciado.} Determinar el estado de esfuerzo en los puntos $A$ y $B$ de la secci\'on transversal $a-a$, los esfuerzos principales y el cortante m\'aximo para cada estado. Para $S_y=40\ksi$, determinar el factor de seguridad seg\'un el criterio de von Mises.
+\end{resultbox}
+
+\section*{1. Lectura correcta de la geometr\'ia}
+
+El tramo donde se encuentra la secci\'on $a-a$ forma $30^\circ$ con la direcci\'on vertical de la carga. Por ello, al cortar el miembro en $a-a$, la fuerza de $750\,\mathrm{lb}$ produce una componente longitudinal $N$ y una componente transversal $V$.
+
+La l\'inea de acci\'on de la fuerza est\'a a $1.25\,\mathrm{in}$ a la derecha del tramo vertical inferior. El tramo inclinado mide $2\,\mathrm{in}$; su proyecci\'on horizontal es $2\sin30^\circ=1.00\,\mathrm{in}$. Por tanto, el brazo perpendicular de la fuerza vertical respecto al centroide de la secci\'on es
+\[
+e=1.25-2\sin30^\circ=0.25\,\mathrm{in}.
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95,>=Latex,line cap=round,line join=round]
+  \coordinate (S) at (4.3,4.4);
+  \coordinate (E) at (3.3,2.668);
+  \coordinate (D) at (3.3,-0.332);
+  \coordinate (P) at (4.55,-0.332);
+
+  \draw[line width=9pt,gray!35] (S)--(E)--(D);
+  \draw[line width=1.1pt,navy] (S)--(E)--(D);
+  \draw[line width=1.1pt,accent] ($(S)+(-0.42,0.24)$)--($(S)+(0.42,-0.24)$);
+  \node[accent,above right=1pt and 1pt of S] {$a-a$};
+
+  \draw[dashed,linegray] (P)--(4.55,1.05);
+  \draw[->,very thick,accent] (P)--++(0,-1.55) node[below] {$750\,\mathrm{lb}$};
+
+  \draw[<->,thin] (3.3,-0.77)--(4.55,-0.77) node[midway,below] {$1.25\,\mathrm{in}$};
+  \draw[thin] (3.3,-0.56)--(3.3,-0.90);
+  \draw[thin] (4.55,-0.56)--(4.55,-0.90);
+
+  \draw[<->,thin] (2.63,2.668)--(2.63,-0.332) node[midway,left] {$3\,\mathrm{in}$};
+  \draw[thin] (2.83,2.668)--(2.43,2.668);
+  \draw[thin] (2.83,-0.332)--(2.43,-0.332);
+
+  \draw[<->,thin] ($(E)+(-0.50,0.29)$)--($(S)+(-0.50,0.29)$) node[midway,left=2pt] {$2\,\mathrm{in}$};
+
+  \coordinate (O) at (S);
+  \coordinate (X) at ($(O)+(-1.0,-1.732)$);
+  \coordinate (V) at ($(O)+(0,-2.0)$);
+  \draw[->,thin,navy] (O)--(X) node[below left] {$x$};
+  \draw[->,thin,linegray] (O)--(V) node[below] {vertical};
+  \pic[draw,thin,"$30^\circ$",angle radius=0.55cm,angle eccentricity=1.25] {angle = X--O--V};
+
+  \node[align=left] at (7.15,2.35) {El eje del tramo inclinado\\forma $30^\circ$ con la vertical.\\[2pt]$e=1.25-2\sin30^\circ=0.25\,\mathrm{in}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{notebox}
+\textbf{Observaci\'on de est\'atica.} La cota vertical de $3\,\mathrm{in}$ no aparece en el brazo de momento de una fuerza vertical: el momento respecto a la secci\'on depende de la separaci\'on horizontal entre el corte y la l\'inea de acci\'on de la carga.
+\end{notebox}
+
+\section*{2. Diagrama de cuerpo libre y resultantes internas}
+
+Tomamos el cuerpo libre situado por debajo de la secci\'on $a-a$. Con $x$ longitudinal al miembro y $y$ transversal en el plano:
+\[
+\sum F_x=0:\qquad N=750\cos30^\circ=\boxed{649.52\ \mathrm{lb}},
+\]
+\[
+\sum F_y=0:\qquad V=750\sin30^\circ=\boxed{375.00\ \mathrm{lb}},
+\]
+\[
+\sum M_z=0:\qquad M=750\left(1.25-2\sin30^\circ\right)=\boxed{187.5\lbin}.
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (O) at (0,0);
+  \draw[->,thick,navy] (O)--(2.4,-4.157) node[below right] {$x$};
+  \draw[->,thick,bluegray] (O)--(-3.0,-1.732) node[below left] {$y$};
+  \draw[->,very thick,accent] (1.1,-1.9)--++(0,-3.0) node[below] {$750\,\mathrm{lb}$};
+  \draw[->,very thick,navy] (1.1,-1.9)--++(1.299,-2.25) node[midway,right] {$N=649.52\,\mathrm{lb}$};
+  \draw[->,very thick,bluegray] (1.1,-1.9)--++(-1.299,-0.75) node[midway,left] {$V=375\,\mathrm{lb}$};
+  \draw[->,very thick,green] (-0.3,0.05) arc[start angle=170,end angle=55,radius=0.65] node[above right] {$M=187.5\lbin$};
+  \node[above left] at (O) {corte $a-a$};
+\end{tikzpicture}
+\end{center}
+
+\begin{checkbox}
+\textbf{Chequeo num\'erico de equilibrio.} Si se reemplaza $750\,\mathrm{lb}$ por $700\,\mathrm{lb}$, las expresiones se reducen a $N=700\cos30^\circ$, $V=700\sin30^\circ$ y $M=700(1.25-2\sin30^\circ)$, que corresponden a la configuraci\'on original de referencia del problema.
+\end{checkbox}
+
+\newpage
+\section*{3. Propiedades de la secci\'on transversal}
+
+La secci\'on rectangular tiene dimensiones $0.75\,\mathrm{in}\times0.50\,\mathrm{in}$. Los puntos $A$ y $B$ son fibras extremas separadas por la dimensi\'on de $0.75\,\mathrm{in}$; por eso
+\[
+c=\frac{0.75}{2}=0.375\,\mathrm{in}.
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=4.8,>=Latex]
+  \draw[fill=gray!16,thick] (-0.375,-0.25) rectangle (0.375,0.25);
+  \draw[dashed,thin] (0,-0.34)--(0,0.34);
+  \draw[->,thin] (-0.68,0)--(0.68,0) node[right] {$y$};
+  \draw[->,thin] (0,-0.48)--(0,0.48) node[above] {$z$};
+  \fill[accent] (-0.375,0) circle (0.018) node[left] {$A$};
+  \fill[accent] (0.375,0) circle (0.018) node[right] {$B$};
+  \draw[<->,thin] (-0.375,0.36)--(0.375,0.36) node[midway,above] {$0.75\,\mathrm{in}$};
+  \draw[<->,thin] (0.49,-0.25)--(0.49,0.25) node[midway,right] {$0.50\,\mathrm{in}$};
+  \node[scale=0.22] at (-0.20,-0.12) {$y_A=-0.375$};
+  \node[scale=0.22] at (0.20,-0.12) {$y_B=+0.375$};
+\end{tikzpicture}
+\end{center}
+
+\[
+A=(0.75)(0.50)=\boxed{0.375\ \mathrm{in^2}}
+\]
+
+El momento de inercia que corresponde a la flexi\'on entre las fibras $A$ y $B$ es
+\[
+I_z=\frac{b h^3}{12}
+=\frac{(0.50)(0.75)^3}{12}
+=\boxed{0.0175781\ \mathrm{in^4}}.
+\]
+
+\section*{4. Esfuerzo normal por carga axial y flexi\'on}
+
+\subsection*{4.1 Esfuerzo axial uniforme}
+\[
+\sigma_N=\frac{N}{A}
+=\frac{649.52}{0.375}
+=1732.05\ \mathrm{psi}
+=\boxed{1.732\ksi}.
+\]
+Esta componente es de tracci\'on y act\'ua por igual en toda la secci\'on.
+
+\subsection*{4.2 Esfuerzo de flexi\'on}
+La magnitud en las fibras extremas es
+\[
+|\sigma_b|=\frac{Mc}{I_z}
+=\frac{(187.5)(0.375)}{0.0175781}
+=4000\ \mathrm{psi}
+=\boxed{4.000\ksi}.
+\]
+
+Con la convenci\'on $y>0$ hacia $B$ y con el sentido del momento interno obtenido del DCL,
+\[
+\boxed{\sigma_{b,A}=-4.000\ksi},
+\qquad
+\boxed{\sigma_{b,B}=+4.000\ksi}.
+\]
+
+\subsection*{4.3 Superposici\'on}
+En $A$:
+\[
+\boxed{\sigma_A=\sigma_N+\sigma_{b,A}=1.732-4.000=-2.268\ksi}
+\]
+(compresi\'on).
+
+En $B$:
+\[
+\boxed{\sigma_B=\sigma_N+\sigma_{b,B}=1.732+4.000=+5.732\ksi}
+\]
+(tracci\'on).
+
+\begin{center}
+\begin{tikzpicture}[x=1.05cm,y=0.62cm,>=Latex]
+  \draw[thick] (0,0)--(7,0);
+  \node[below] at (0,0) {$A$}; \node[below] at (7,0) {$B$};
+  \draw[dashed] (3.5,-4.8)--(3.5,6.2) node[above] {centroide};
+  \draw[bluegray,thick] (0,1.732)--(7,1.732);
+  \node[bluegray,right] at (7,1.732) {$\sigma_N=+1.732\ksi$};
+  \draw[accent,thick] (0,-4.0)--(7,4.0);
+  \node[accent,left] at (0,-4.0) {$-4.000$};
+  \node[accent,right] at (7,4.0) {$+4.000$};
+  \draw[navy,very thick] (0,-2.268)--(7,5.732);
+  \node[navy,left] at (0,-2.268) {$\sigma_A=-2.268\ksi$};
+  \node[navy,right] at (7,5.732) {$\sigma_B=+5.732\ksi$};
+  \draw[gray!70,->] (-0.45,-5.2)--(-0.45,6.7) node[above] {$\sigma_x$};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{4.4 Esfuerzo cortante transversal en $A$ y $B$}
+El esfuerzo cortante debido a $V$ se calcula con
+\[
+\tau=\frac{VQ}{I_z t}.
+\]
+En las fibras extremas de una secci\'on rectangular, el primer momento de \`area $Q$ del material por encima o por debajo del punto se anula. Por ello,
+\[
+\boxed{\tau_A=0},\qquad \boxed{\tau_B=0}.
+\]
+Como verificaci\'on, el cortante transversal alcanza su m\'aximo en el eje neutro, no en $A$ ni en $B$:
+\[
+\tau_{\max,\,\mathrm{seccion}}=\frac{3V}{2A}
+=\frac{3(375)}{2(0.375)}=1.50\ksi.
+\]
+
+\newpage
+\section*{5. Estados de esfuerzo y esfuerzos principales}
+
+Debido a que $\tau_A=\tau_B=0$ y no existe otro esfuerzo normal local, los estados en $A$ y $B$ son uniaxiales.
+
+\subsection*{5.1 Punto A: compresi\'on}
+\[
+\boxed{\sigma_x=-2.268\ksi,\qquad \sigma_y=0,\qquad \tau_{xy}=0}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0,>=Latex]
+  \draw[thick,fill=gray!10] (0,0) rectangle (2.4,2.4);
+  \draw[->,very thick,bluegray] (3.4,1.2)--(2.4,1.2) node[right=14pt] {$2.268\ksi$};
+  \draw[->,very thick,bluegray] (-1.0,1.2)--(0,1.2) node[left=14pt] {$2.268\ksi$};
+  \node at (1.2,-0.5) {Elemento en $A$: compresi\'on uniaxial};
+\end{tikzpicture}
+\hspace{1.3cm}
+\begin{tikzpicture}[x=1.15cm,y=1.15cm,>=Latex]
+  \draw[->] (-3.0,0)--(1.0,0) node[right] {$\sigma\ (\ksi)$};
+  \draw[->] (0,-1.7)--(0,1.7) node[above] {$\tau\ (\ksi)$};
+  \draw[navy,thick] (-1.134,0) circle (1.134);
+  \fill[accent] (-2.268,0) circle (2pt) node[below left] {$-2.268$};
+  \fill[accent] (0,0) circle (2pt) node[below right] {$0$};
+  \draw[dashed] (-1.134,-1.134)--(-1.134,1.134);
+  \node[navy,left] at (-1.134,1.134) {$\tau_{\max}=1.134$};
+\end{tikzpicture}
+\end{center}
+
+En esfuerzo plano:
+\[
+\boxed{\sigma_1=0,\qquad \sigma_2=-2.268\ksi}.
+\]
+Incluyendo $\sigma_3=0$, los principales ordenados son $(0,0,-2.268)\ksi$. El cortante m\'aximo absoluto es
+\[
+\boxed{\tau_{\max,A}=\frac{0-(-2.268)}{2}=1.134\ksi}.
+\]
+
+\subsection*{5.2 Punto B: tracci\'on}
+\[
+\boxed{\sigma_x=+5.732\ksi,\qquad \sigma_y=0,\qquad \tau_{xy}=0}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0,>=Latex]
+  \draw[thick,fill=gray!10] (0,0) rectangle (2.4,2.4);
+  \draw[->,very thick,accent] (2.4,1.2)--(3.4,1.2) node[right] {$5.732\ksi$};
+  \draw[->,very thick,accent] (0,1.2)--(-1.0,1.2) node[left] {$5.732\ksi$};
+  \node at (1.2,-0.5) {Elemento en $B$: tracci\'on uniaxial};
+\end{tikzpicture}
+\hspace{1.3cm}
+\begin{tikzpicture}[x=0.7cm,y=0.7cm,>=Latex]
+  \draw[->] (-0.8,0)--(7.0,0) node[right] {$\sigma\ (\ksi)$};
+  \draw[->] (0,-3.5)--(0,3.5) node[above] {$\tau\ (\ksi)$};
+  \draw[navy,thick] (2.866,0) circle (2.866);
+  \fill[accent] (0,0) circle (2pt) node[below left] {$0$};
+  \fill[accent] (5.732,0) circle (2pt) node[below right] {$5.732$};
+  \draw[dashed] (2.866,-2.866)--(2.866,2.866);
+  \node[navy,right] at (2.866,2.866) {$\tau_{\max}=2.866$};
+\end{tikzpicture}
+\end{center}
+
+En esfuerzo plano:
+\[
+\boxed{\sigma_1=5.732\ksi,\qquad \sigma_2=0}.
+\]
+Con $\sigma_3=0$, los principales ordenados son $(5.732,0,0)\ksi$. El cortante m\'aximo absoluto es
+\[
+\boxed{\tau_{\max,B}=\frac{5.732-0}{2}=2.866\ksi}.
+\]
+
+\newpage
+\section*{6. Criterio de von Mises y factor de seguridad}
+
+Para esfuerzo plano,
+\[
+\sigma_{vm}=\sqrt{\sigma_x^2-\sigma_x\sigma_y+\sigma_y^2+3\tau_{xy}^2}.
+\]
+Como en ambos puntos $\sigma_y=0$ y $\tau_{xy}=0$,
+\[
+\sigma_{vm}=|\sigma_x|.
+\]
+
+\subsection*{6.1 Punto A}
+\[
+\sigma_{vm,A}=|-2.268|=\boxed{2.268\ksi},
+\qquad
+n_A=\frac{40}{2.268}=\boxed{17.64}.
+\]
+
+\subsection*{6.2 Punto B}
+\[
+\sigma_{vm,B}=|5.732|=\boxed{5.732\ksi},
+\qquad
+n_B=\frac{40}{5.732}=\boxed{6.98}.
+\]
+
+\begin{resultbox}
+\textbf{Condici\'on cr\'itica.} El punto $B$ presenta el mayor esfuerzo equivalente de von Mises. Por tanto,
+\[
+\boxed{n_{\min}=n_B\approx6.98}.
+\]
+Para $S_y=40\ksi$, la pieza permanece por debajo de la fluencia bajo la carga indicada.
+\end{resultbox}
+
+\section*{7. Resumen final verificado}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{>{\bfseries}lcc}
+\toprule
+Magnitud & Punto $A$ & Punto $B$\\
+\midrule
+Esfuerzo normal $\sigma_x$ & $-2.268\ksi$ & $+5.732\ksi$\\
+Esfuerzo cortante $\tau_{xy}$ & $0$ & $0$\\
+Principales, esfuerzo plano & $(0,-2.268)\ksi$ & $(5.732,0)\ksi$\\
+Cortante m\'aximo absoluto & $1.134\ksi$ & $2.866\ksi$\\
+Von Mises & $2.268\ksi$ & $5.732\ksi$\\
+Factor de seguridad & $17.64$ & $6.98$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{checkbox}
+\textbf{QA f\'isico y algebraico.}
+\begin{itemize}
+\item $A$ y $B$ son fibras extremas: el cortante por $V$ debe ser cero en ambos puntos.
+\item La flexi\'on vale $4.000\ksi$, mayor que la tracci\'on axial uniforme de $1.732\ksi$; por ello una fibra queda en compresi\'on y la opuesta en tracci\'on.
+\item La magnitud mayor es $|\sigma_B|=5.732\ksi$, de modo que $B$ necesariamente controla el criterio de von Mises.
+\item Los valores de von Mises coinciden con $|\sigma_x|$ porque los estados locales son uniaxiales.
+\end{itemize}
+\end{checkbox}
+
+\vfill
+\begin{center}
+\small Soluci\'on revisada a partir de la geometr\'ia y dimensiones mostradas en el punto 8 del taller suministrado.
+\end{center}
+
+\end{document}
