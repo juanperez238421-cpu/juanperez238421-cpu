@@ -1,104 +1,103 @@
-# Hi, I'm Juan Diego Pérez 👋
+# Juan Diego Pérez
 
-### Mechatronic Engineer | Data Analyst | Automation & Scientific Computing Specialist
+**Data Analyst · Mechatronic Engineer · M.Sc. in Industrial Automation & Control**
 
-I transform complex physical systems and business data into clear, reproducible, and decision-oriented analysis. My work connects **engineering fundamentals** — CFD, experimental validation, automation, and modeling — with **modern analytics** — Python, SQL, BI dashboards, statistical testing, and data storytelling.
+I build reproducible analytics, business intelligence, statistical experiments, and engineering-data workflows.  
+This profile is intentionally organized into separate tracks so recruiters, collaborators, and students can quickly find the work relevant to them.
 
-**Native Spanish speaker** with a global mindset for technical collaboration, documentation, and applied research.
-
----
-
-## 🚀 Current Focus
-
-- **Data Analytics & Business Intelligence:** exploratory analysis, statistical validation, dashboards, segmentation, and executive insights.
-- **Scientific Computing & Engineering:** CFD workflows, PIV experimental validation, numerical simulation, and automation-oriented analysis.
-- **Technical Visualization:** ManimCE, Python animations, interactive viewers, and visual explanations for engineering and analytics.
-- **Industry 4.0 Learning Path:** scalable data pipelines, Big Data foundations, and real-time analytics for industrial decision-making.
-
-🎓 **Education:** Master's Candidate in Industrial Automation and Control.  
-🌎 **Location:** Medellín, Colombia.
+> **Recruiters / Data Analytics:** start with the **Data Analytics & Business Intelligence** section below or visit my [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/).
 
 ---
 
-## 🛠 Technical Stack
+## Data Analytics & Business Intelligence
 
-| Area | Tools & Technologies |
+Selected professional analytics projects. These are the repositories I recommend reviewing first for Data Analyst / BI roles.
+
+| Project | Focus | Stack |
+|---|---|---|
+| [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/) | Curated portfolio, business storytelling, project demos | GitHub Pages, HTML/CSS |
+| [E-commerce Analysis SQL](https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL) | Funnel analysis, cohort retention, conversion leakage | SQL, CTEs, joins |
+| [Landing Page A/B Test](https://github.com/juanperez238421-cpu/landing-experiment-ab-test) | Experimentation, conversion analysis, statistical validation | Python, Pandas, SciPy |
+| [ConnectaTel Customer Analytics](https://github.com/juanperez238421-cpu/telecom-analysis) | EDA, customer segmentation, outliers, retention signals | Python, Pandas |
+| [Walmart Sales Analysis](https://github.com/juanperez238421-cpu/walmart-sales-analysis-report) | Executive sales reporting, KPIs, data quality | Excel, Power Query |
+| [Urban Mobility & LATAM Economy](https://github.com/juanperez238421-cpu/Urban-Mobility-Economy-LATAM) | Multi-source data integration and regional analysis | Python, Pandas |
+
+**Core analytics stack:** Python · SQL · Pandas · NumPy · SciPy · Power BI · Excel · Power Query · statistical testing · A/B testing · cohort analysis · segmentation.
+
+---
+
+## Research & Engineering Analytics
+
+Research-oriented work in numerical simulation, experimental validation, scientific computing, and technical visualization.
+
+| Project | Research / Engineering focus |
 |---|---|
-| Programming & Analytics | Python, Pandas, NumPy, SQL, MATLAB, C++ |
-| Statistics & Experimentation | A/B testing, hypothesis testing, cohort analysis, segmentation, EDA |
-| BI & Visualization | Tableau, Power BI, Advanced Excel, Power Query, Matplotlib, Seaborn |
-| Engineering | CFD, PIV, FEA, numerical simulation, experimental validation |
-| Creative & Technical Communication | ManimCE, LaTeX, Markdown, data storytelling, technical documentation |
+| [Turbine Optimization CFD](https://github.com/juanperez238421-cpu/Turbine-Optimization-CFD) | CFD, gravitational vortex turbine analysis, experimental validation, PIV workflows |
+| [Manim Scientific Visualize](https://github.com/juanperez238421-cpu/Manim-Scientific-Visualize) | Scientific visualization for fluid dynamics, mechanics, algorithms, and technical communication |
+| [Vistas 3x3 Replica](https://github.com/juanperez238421-cpu/vistas-3x3-replica) | Interactive 3D/CAD visualization and engineering-view workflows |
+| [Vistas 3x3 Solutions](https://github.com/juanperez238421-cpu/vistas-3x3-solucion-i09-i12) | Technical-view solutions and CAD reference material |
+
+**Research stack:** CFD · PIV · numerical simulation · MATLAB · Python · ManimCE · LaTeX · experimental validation.
 
 ---
 
-## 📂 Featured Projects
+## Software, Visualization & Technical Tools
 
-### 1. [Landing Experiment A/B Test](https://github.com/juanperez238421-cpu/landing-experiment-ab-test)
-**Technologies:** Python, Pandas, statistical testing, A/B testing, data visualization.  
-- Evaluated landing page versions **A vs. B** using conversion rate, average spend, traffic source, and user type.
-- Built a reproducible repository structure with notebook, dataset, scripts, utilities, and documentation.
-- Translated statistical results into business recommendations for marketing and product decisions.
+Repositories focused on reusable software, visualization systems, and technical tooling.
 
-### 2. [E-commerce Journey and Retention Analysis](https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL)
-**Technologies:** SQL, CTEs, joins, funnel analysis, cohort retention.  
-- Built an analytical workflow to evaluate user behavior across the customer journey.
-- Identified an **85.7% drop-off rate** within the conversion funnel.
-- Used retention logic to understand recurring user behavior and business leakage points.
-
-### 3. [Urban Mobility vs. LATAM Economy](https://github.com/juanperez238421-cpu/Urban-Mobility-Economy-LATAM)
-**Technologies:** Python, Pandas, data cleaning, data wrangling, visualization.  
-- Merged and standardized traffic and macroeconomic datasets from different sources.
-- Explored the relationship between urban congestion and economic indicators in Latin American cities.
-- Developed a reproducible analysis focused on mobility, productivity, and infrastructure decisions.
-
-### 4. [Customer Behavior Analysis - ConnectaTel](https://github.com/juanperez238421-cpu/telecom-analysis)
-**Technologies:** Python, Pandas, Seaborn, EDA, customer segmentation.  
-- Cleaned and profiled telecom customer data to support retention and segmentation strategies.
-- Identified the **Adult customer segment (50.4%)** as a key driver of business stability.
-- Improved regional analysis by handling missing geographic information.
-
-### 5. [Walmart Sales Executive Analysis](https://github.com/juanperez238421-cpu/walmart-sales-analysis-report)
-**Technologies:** Advanced Excel, Power Query, data modeling, business intelligence.  
-- Transformed transactional sales data into an executive-level analytical report.
-- Identified department-level efficiency patterns, including high-performing categories by sales density.
-- Detected a **4.79% sales classification gap**, supporting data quality improvement actions.
-
-### 6. [Turbine Optimization with CFD and Data Analytics](https://github.com/juanperez238421-cpu/Turbine-Optimization-CFD)
-**Technologies:** Python, MATLAB, CFD, numerical simulation, experimental validation.  
-- Validated physical models using numerical and experimental data from gravitational vortex turbine research.
-- Integrated engineering analysis with data-driven sensitivity exploration.
-- Supports applied research in low-head hydropower and microgeneration systems.
-
-### 7. [Manim Scientific Visualizer](https://github.com/juanperez238421-cpu/Manim-Scientific-Visualize)
-**Technologies:** Python, NumPy, LaTeX, ManimCE.  
-- Developed a scientific visualization framework for fluid dynamics, structural statics, and software theory.
-- Integrated real **PIV experimental data** to support gravitational vortex turbine validation.
-- Built reusable visual components for algorithm tracing, UML-style logic, and technical storytelling.
+| Project | Purpose |
+|---|---|
+| [LMS](https://github.com/juanperez238421-cpu/LMS) | Learning-management and educational software experiments |
+| [Manim Scientific Visualize](https://github.com/juanperez238421-cpu/Manim-Scientific-Visualize) | Reusable scientific animation and visualization workflows |
 
 ---
 
-## 🧩 Additional Repositories
+<details>
+<summary><strong>Academic & Teaching Repositories</strong> — classroom material, labs, workshops, and course resources</summary>
 
-- [vistas-3x3-solucion-i09-i12](https://github.com/juanperez238421-cpu/vistas-3x3-solucion-i09-i12): interactive 3D solution viewer for teaching and CAD reference workflows.
-- [vistas-3x3-replica](https://github.com/juanperez238421-cpu/vistas-3x3-replica): Three.js viewer for 3x3 views and visual reference export.
-- [LMS](https://github.com/juanperez238421-cpu/LMS): Python-based learning and management system repository.
-- **ManiMaps**: private ManimCE + OSM + Google Maps visualization project.
+<br>
+
+These repositories support my teaching work and are intentionally separated from my professional Data Analytics portfolio.
+
+### Statistics & Programming
+- [Statistics 10 — 2026](https://github.com/juanperez238421-cpu/ijr-estadistica-10-2026)
+- [Statistics 11 — 2026](https://github.com/juanperez238421-cpu/ijr-estadistica-11-2026)
+- [IJR Seminar](https://github.com/juanperez238421-cpu/IJR---Seminario)
+- [Seminario Goal — Period 2](https://github.com/juanperez238421-cpu/Seminario_Goal_Period2)
+
+### Physics, Mathematics & Geometry
+- [Physics 9 — 2026](https://github.com/juanperez238421-cpu/ijr-fundamentos-fisica-9-2026)
+- [Geometry 8 — 2026](https://github.com/juanperez238421-cpu/ijr-geometria-8-2026-2)
+- [Mathematics Workshop 8 — 2026](https://github.com/juanperez238421-cpu/ijr-taller-matematicas-8-2026-2)
+- [Geometry Workshop — Week 7](https://github.com/juanperez238421-cpu/Workshop-Week-7-20-2026---Geo)
+
+</details>
 
 ---
 
-## 📌 Portfolio Direction
+## Professional Profile
 
-My repositories are organized around three technical lines:
+**Data Analytics**
+- Business and product analytics
+- KPI design and executive reporting
+- Statistical experimentation and A/B testing
+- Funnel, cohort, retention, and segmentation analysis
+- Reproducible Python/SQL workflows
 
-1. **Business Analytics:** SQL, Python, BI, statistical validation, and decision-making.
-2. **Engineering Analytics:** CFD, PIV, numerical simulation, and experimental validation.
-3. **Technical Visualization:** ManimCE, interactive viewers, and educational/scientific communication.
+**Engineering & Research**
+- CFD and numerical simulation
+- PIV and experimental validation
+- Scientific computing
+- Technical and scientific visualization
 
 ---
 
-## 📫 Contact
+## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268)
-- [Email](mailto:juanperez238421@correo.itm.edu.co)
-- GitHub: [@juanperez238421-cpu](https://github.com/juanperez238421-cpu)
+- [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268/)
+- [GitHub](https://github.com/juanperez238421-cpu)
+
+---
+
+<sub>Repository organization: professional analytics first · research/engineering second · academic teaching material separated below.</sub>
