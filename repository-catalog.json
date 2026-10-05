@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "owner": "juanperez238421-cpu",
+  "policy": {
+    "non_destructive": true,
+    "move_source_files": false,
+    "merge_git_histories": false,
+    "rename_repositories": false,
+    "change_database_data": false,
+    "purpose": "Navigation and thematic classification only"
+  },
+  "canonical_hubs": {
+    "profile_navigation": "juanperez238421-cpu/juanperez238421-cpu",
+    "data_analytics": "juanperez238421-cpu/juanperez238421-cpu.github.io"
+  },
+  "repositories": [
+    {
+      "name": "juanperez238421-cpu.github.io",
+      "category": "data-analytics",
+      "role": "canonical-data-analytics-hub",
+      "public": true
+    },
+    {
+      "name": "Ecommerce-Analysis-SQL",
+      "category": "data-analytics",
+      "role": "sql-funnel-cohort-analysis",
+      "public": true
+    },
+    {
+      "name": "landing-experiment-ab-test",
+      "category": "data-analytics",
+      "role": "ab-testing-statistical-experimentation",
+      "public": true
+    },
+    {
+      "name": "telecom-analysis",
+      "category": "data-analytics",
+      "role": "customer-analytics-segmentation",
+      "public": true
+    },
+    {
+      "name": "walmart-sales-analysis-report",
+      "category": "data-analytics",
+      "role": "excel-power-query-sales-analysis",
+      "public": true
+    },
+    {
+      "name": "Urban-Mobility-Economy-LATAM",
+      "category": "data-analytics",
+      "role": "python-multisource-regional-analysis",
+      "public": true
+    },
+    {
+      "name": "Turbine-Optimization-CFD",
+      "category": "research-engineering",
+      "role": "cfd-piv-turbine-research",
+      "public": true
+    },
+    {
+      "name": "Manim-Scientific-Visualize",
+      "category": "research-engineering",
+      "role": "scientific-visualization",
+      "public": true
+    },
+    {
+      "name": "LMS",
+      "category": "software-tools",
+      "role": "learning-management-software",
+      "public": true
+    },
+    {
+      "name": "vistas-3x3-replica",
+      "category": "software-tools",
+      "role": "interactive-cad-visualization",
+      "public": true
+    },
+    {
+      "name": "vistas-3x3-solucion-i09-i12",
+      "category": "software-tools",
+      "role": "technical-view-reference",
+      "public": true
+    },
+    {
+      "name": "ijr-geometria-8-2026-2",
+      "category": "academic-teaching",
+      "role": "geometry-8",
+      "public": true
+    },
+    {
+      "name": "ijr-taller-matematicas-8-2026-2",
+      "category": "academic-teaching",
+      "role": "math-workshop-8",
+      "public": true
+    },
+    {
+      "name": "ijr-estadistica-10-2026",
+      "category": "academic-teaching",
+      "role": "statistics-10",
+      "public": true
+    },
+    {
+      "name": "ijr-fundamentos-fisica-9-2026",
+      "category": "academic-teaching",
+      "role": "physics-9",
+      "public": true
+    },
+    {
+      "name": "ijr-estadistica-11-2026",
+      "category": "academic-teaching",
+      "role": "statistics-programming-11",
+      "public": true
+    },
+    {
+      "name": "IJR---Seminario",
+      "category": "academic-teaching",
+      "role": "software-engineering-seminar",
+      "public": true
+    },
+    {
+      "name": "Workshop-Week-7-20-2026---Geo",
+      "category": "academic-teaching",
+      "role": "geometry-workshop",
+      "public": true
+    },
+    {
+      "name": "Seminario_Goal_Period2",
+      "category": "academic-teaching",
+      "role": "seminar-period-goal",
+      "public": true
+    },
+    {
+      "name": "juanperez238421-cpu",
+      "category": "account-navigation",
+      "role": "profile-navigation",
+      "public": true
+    }
+  ]
+}
