@@ -5,17 +5,29 @@
 I build reproducible analytics, business intelligence, statistical experiments, and engineering-data workflows.  
 This profile is intentionally organized into separate tracks so recruiters, collaborators, and students can quickly find the work relevant to them.
 
-> **Recruiters / Data Analytics:** start with the **Data Analytics & Business Intelligence** section below or visit my [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/).
+## Canonical repository map
+
+This profile repository is the **navigation layer** for my GitHub account. Project source code, datasets, history, releases, and deployment structures remain in their original repositories.
+
+| Track | Canonical entry point | Purpose |
+|---|---|---|
+| 📊 **Data Analytics & BI** | [Data Analyst Portfolio repository](https://github.com/juanperez238421-cpu/juanperez238421-cpu.github.io) · [Live portfolio](https://juanperez238421-cpu.github.io/) | Professional analytics portfolio and links to all Data Analyst projects |
+| 🔬 **Research & Engineering** | [Research & Engineering section](#research--engineering-analytics) | CFD, PIV, numerical simulation, scientific computing and technical visualization |
+| 🛠️ **Software & Technical Tools** | [Software & Tools section](#software-visualization--technical-tools) | Reusable software, visualization and engineering utilities |
+| 🎓 **Academic & Teaching** | [Academic repositories section](#academic--teaching-repositories) | Classroom resources, labs, workshops and course platforms |
+| 🗂️ **Full public repository catalog** | [REPOSITORY_INDEX.md](REPOSITORY_INDEX.md) | One non-destructive index of all public repositories by primary theme |
+
+> **Recruiters / Data Analytics:** start with the **Data Analyst Portfolio repository** or the **Data Analytics & Business Intelligence** section below.
 
 ---
 
 ## Data Analytics & Business Intelligence
 
-Selected professional analytics projects. These are the repositories I recommend reviewing first for Data Analyst / BI roles.
+The repository [**juanperez238421-cpu.github.io**](https://github.com/juanperez238421-cpu/juanperez238421-cpu.github.io) is the canonical **Data Analyst portfolio hub**. It references the professional analytics projects below without moving, duplicating, or rewriting their source data.
 
 | Project | Focus | Stack |
 |---|---|---|
-| [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/) | Curated portfolio, business storytelling, project demos | GitHub Pages, HTML/CSS |
+| [Data Analyst Portfolio](https://github.com/juanperez238421-cpu/juanperez238421-cpu.github.io) | Canonical portfolio hub, project navigation, business storytelling and demos | GitHub Pages, HTML/CSS |
 | [E-commerce Analysis SQL](https://github.com/juanperez238421-cpu/Ecommerce-Analysis-SQL) | Funnel analysis, cohort retention, conversion leakage | SQL, CTEs, joins |
 | [Landing Page A/B Test](https://github.com/juanperez238421-cpu/landing-experiment-ab-test) | Experimentation, conversion analysis, statistical validation | Python, Pandas, SciPy |
 | [ConnectaTel Customer Analytics](https://github.com/juanperez238421-cpu/telecom-analysis) | EDA, customer segmentation, outliers, retention signals | Python, Pandas |
@@ -49,15 +61,19 @@ Repositories focused on reusable software, visualization systems, and technical 
 |---|---|
 | [LMS](https://github.com/juanperez238421-cpu/LMS) | Learning-management and educational software experiments |
 | [Manim Scientific Visualize](https://github.com/juanperez238421-cpu/Manim-Scientific-Visualize) | Reusable scientific animation and visualization workflows |
+| [Vistas 3x3 Replica](https://github.com/juanperez238421-cpu/vistas-3x3-replica) | Interactive technical visualization |
+| [Vistas 3x3 Solutions](https://github.com/juanperez238421-cpu/vistas-3x3-solucion-i09-i12) | CAD/technical-view reference utilities |
 
 ---
 
+## Academic & Teaching Repositories
+
 <details>
-<summary><strong>Academic & Teaching Repositories</strong> — classroom material, labs, workshops, and course resources</summary>
+<summary><strong>Open academic repository map</strong> — classroom material, labs, workshops and course resources</summary>
 
 <br>
 
-These repositories support my teaching work and are intentionally separated from my professional Data Analytics portfolio.
+These repositories support teaching work and are intentionally separated from the professional Data Analytics track.
 
 ### Statistics & Programming
 - [Statistics 10 — 2026](https://github.com/juanperez238421-cpu/ijr-estadistica-10-2026)
@@ -72,6 +88,22 @@ These repositories support my teaching work and are intentionally separated from
 - [Geometry Workshop — Week 7](https://github.com/juanperez238421-cpu/Workshop-Week-7-20-2026---Geo)
 
 </details>
+
+For the complete public-account inventory and primary classification, see **[REPOSITORY_INDEX.md](REPOSITORY_INDEX.md)**.
+
+---
+
+## Repository integrity policy
+
+The organization above is deliberately **non-destructive**:
+
+- no project repository is merged into another repository;
+- no source file, dataset, commit history, branch, deployment, or database record is moved;
+- canonical repositories keep their current URLs and independent Git history;
+- the profile repository only provides navigation and classification;
+- the Data Analyst portfolio repository acts as an umbrella **reference hub**, not as a replacement for the underlying project repositories.
+
+A machine-readable version of this map is maintained in [repository-catalog.json](repository-catalog.json).
 
 ---
 
@@ -94,10 +126,11 @@ These repositories support my teaching work and are intentionally separated from
 
 ## Contact
 
-- [Data Analytics Portfolio](https://juanperez238421-cpu.github.io/)
+- [Data Analyst Portfolio repository](https://github.com/juanperez238421-cpu/juanperez238421-cpu.github.io)
+- [Live Data Analytics Portfolio](https://juanperez238421-cpu.github.io/)
 - [LinkedIn](https://www.linkedin.com/in/juan-diego-pérez-352706268/)
 - [GitHub](https://github.com/juanperez238421-cpu)
 
 ---
 
-<sub>Repository organization: professional analytics first · research/engineering second · academic teaching material separated below.</sub>
+<sub>Repository organization: professional analytics first · research/engineering second · software/tools third · academic teaching material clearly separated.</sub>
